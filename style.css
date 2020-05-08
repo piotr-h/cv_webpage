@@ -195,7 +195,7 @@ footer {
 .copyright p:first-child a {
   color: white;
   font-size: 20px;
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
 .copyright p:first-child a:visited {
@@ -244,6 +244,9 @@ footer {
   }
 
   footer .copyright p:first-child,
-  footer .copyright p:nth-child(2) {text-align: center;}
+  footer .copyright p:nth-child(2) {
+    margin: 10px auto;
+    flex: 1;
+  }
 }
 
