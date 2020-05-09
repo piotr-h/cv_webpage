@@ -53,6 +53,11 @@ header section {
 header img {
   max-width: 150px;
   border-radius: 50%;
+  transition: all 1s;
+}
+
+header img:hover {
+  border-radius: 25%;
 }
 
 h1 {
