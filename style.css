@@ -30,6 +30,20 @@ header {
   color: white;
 }
 
+.background-tint {
+  background-color: black;
+  background-blend-mode: multiply;
+  animation-name: animate1;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate1 {
+  to {
+    background-color: white;
+  }
+}
+
 header section {
   margin: 0 auto;
   font-weight: bold;
