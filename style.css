@@ -44,6 +44,72 @@ header {
   }
 }
 
+.line-container {
+  margin: 0;
+  padding: 0;
+  background: rgba(250, 250, 250, 0.7);
+  border-bottom: 1px rgb(238, 238, 238) dotted;
+  position: sticky;
+  top: 0;
+}
+
+nav  {
+  max-width: 1140px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0.1em 1em;
+}
+
+nav  .logo {
+  flex: 1;
+}
+
+nav .menu {
+  flex: 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .logo a {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+nav .logo a img {
+  max-width: 100%;
+  height: 85%;
+}
+
+nav .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav .menu ul li {
+  display: inline-block;
+  padding-right: 1em;
+  text-transform: uppercase;
+}
+
+nav .menu ul li a {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(16, 70, 133);
+  transition: background 0.5s ease;
+}
+
+nav .menu ul li a:hover {
+  background: rgb(238, 238, 238);
+}
+
 header section {
   margin: 0 auto;
   font-weight: bold;
@@ -145,7 +211,7 @@ main section:last-child {
   padding: 5px;
   border-radius: 5px;
   color: rgb(16, 70, 133);
-  transition: background 1s ease-in-out;
+  transition: background 0.5s ease;
 }
 
 .card a:hover {
