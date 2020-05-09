@@ -113,7 +113,7 @@ main section:last-child {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .card .image {
@@ -140,11 +140,14 @@ main section:last-child {
 
 .card a {
   text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
   color: rgb(16, 70, 133);
+  transition: background 1s ease-in-out;
 }
 
 .card a:hover {
-  font-weight: bold;
+  background: rgb(238, 238, 238);
 }
 
 .card .link {
@@ -216,6 +219,7 @@ footer {
   color: white;
   font-size: 20px;
   padding: 0 10px;
+  transition: color 1s;
 }
 
 .copyright p:first-child a:visited {
@@ -223,7 +227,7 @@ footer {
 }
 
 .copyright p:first-child a:hover {
-  color: grey;
+  color: rgb(170, 168, 168);
 }
 
 
