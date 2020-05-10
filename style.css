@@ -55,7 +55,7 @@ header {
 
 nav  {
   max-width: 1140px;
-  height: 50px;
+  height: 35px;
   display: flex;
   margin: 0 auto;
   padding: 0.1em 1em;
@@ -306,6 +306,54 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+  .line-container {
+    position: static;
+  }
+
+  nav {
+    max-width: 100%;
+    background: white;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav .menu {
+    display: block;
+    justify-content: center;
+    background: white;
+  }
+
+  nav .logo a {
+    margin: 5px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+  }
+
+  nav .menu ul li {
+    display: block;
+    border-bottom: 1px rgb(238, 238, 238) dotted;
+    padding: 0;
+  }
+
+  nav .menu ul li {
+    display: block;
+    border-bottom: 1px rgb(238, 238, 238) dotted;
+    text-transform: uppercase;
+  }
+
+  nav .menu ul li:first-child {
+    border-top: 1px rgb(238, 238, 238) dotted;
+  }
+
+  nav .menu ul li a {
+    display: block;
+    text-align: center;
+  }
+
   .skill {
     display: block;
   }
@@ -314,6 +362,11 @@ footer {
     text-align: left;
     max-width: 100%;
     margin-bottom: 20px;
+  }
+
+  .skill .description,
+  .bio .description {
+    max-width: 100%;
   }
 
   .bio {
