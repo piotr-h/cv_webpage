@@ -64,7 +64,7 @@ nav  {
 nav .logo {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 nav .menu {
@@ -325,6 +325,10 @@ footer {
     display: block;
     justify-content: center;
     background: white;
+  }
+
+  nav .logo {
+    justify-content: center;
   }
 
   nav .logo a {
