@@ -38,6 +38,10 @@ header {
   animation-fill-mode: forwards;
 }
 
+.background-tint section strong {
+  font-style: italic;
+}
+
 @keyframes animate1 {
   to {
     background-color: white;
