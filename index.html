@@ -127,7 +127,7 @@
 			</div>
 		</footer>
 		<script>
-			const links = document.querySelectorAll(".menu ul a");
+			const links = document.querySelectorAll(".line-container a");
  
  			for (const link of links) {
 	 			link.addEventListener("click", clickHandler);
@@ -141,6 +141,14 @@
 		 		behavior: "smooth"
 	 			});
  			}
+
+			const logo = document.querySelector(".logo");
+			logo.onclick = function() {
+				window.scrollTo({
+					top: 0, 
+					behavior: 'smooth'
+					});
+			};
 		</script>
 	</body>
 </html>
