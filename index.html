@@ -9,7 +9,7 @@
 		<script src="https://kit.fontawesome.com/dd3698c7e4.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<button class="ham"></button>
+		<button class="ham" id="ham"></button>
 		<div class="line-container">
 			<nav class="navbar">
 				<div class="logo">
@@ -156,7 +156,7 @@
 
 			// handling hamburger menu
 			var navbar = document.querySelector('.navbar');
-			var ham = document.querySelector('.ham');
+			var ham = document.getElementById('ham');
 			ham.addEventListener('click', toggleHamburger);
 		
 			function toggleHamburger() {
@@ -166,7 +166,26 @@
 
 			for (const link of links) {
 	 			link.addEventListener("click", toggleHamburger);
- 			}
+			}
+			 
+			var header = document.querySelector('header');
+			
+
+			window.onscroll = function() {
+				if (ham.classList.contains('showClose')) {
+					return 'nothing';
+				} else {
+					let x = ham.getClientRects()[0]['bottom'];
+					let y = header.getClientRects()[0]['bottom'];
+					if (x>y) {
+						ham.classList.toggle('ham-dark');
+					} else if (y>x) {
+						ham.classList.toggle('ham-dark');
+					}
+				}
+			}
+
+
 		</script>
 	</body>
 </html>
