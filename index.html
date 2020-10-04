@@ -178,9 +178,9 @@
 					let x = ham.getClientRects()[0]['bottom'];
 					let y = header.getClientRects()[0]['bottom'];
 					if (x>y) {
-						ham.classList.toggle('ham-dark');
+						ham.classList.add('ham-dark');
 					} else if (y>x) {
-						ham.classList.toggle('ham-dark');
+						ham.classList.remove('ham-dark');
 					}
 				}
 			}
