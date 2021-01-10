@@ -28,7 +28,7 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-  background-image: url('images/background.jpg');
+  /* background-image: url('images/background.jpg'); */
   background-size: cover;
   background-position: fixed;
   background-attachment: fixed;
@@ -49,7 +49,7 @@ header {
 
 @keyframes animate1 {
   to {
-    background-color: white;
+    background-color: rgb(138, 96, 61);
   }
 }
 
@@ -145,7 +145,7 @@ header {
   text-decoration: none;
   padding: 5px;
   border-radius: 5px;
-  color: rgb(16, 70, 133);
+  color: rgb(138, 96, 61);
   transition: background-color 0.5s ease;
 }
 
@@ -160,8 +160,8 @@ header section {
 }
 
 header img {
-  max-width: 150px;
-  border-radius: 50%;
+  max-width: 200px;
+  border-radius: 5%;
 }
 
 h1 {
@@ -199,7 +199,7 @@ main section:last-child {
   flex: 10%;
   max-width: 10%;
   text-align: right; 
-  color: rgb(16, 70, 133);
+  color:  rgb(138, 96, 61);
   font-weight: bold;
 }
 
@@ -224,7 +224,7 @@ main section:last-child {
 }
 
 .card:hover {
-  box-shadow: 0 0 10px rgb(106, 141, 180);
+  box-shadow: 0 0 10px rgb(138, 96, 61);
   /* transform: scale(1.01); */
 }
 
@@ -254,7 +254,7 @@ main section:last-child {
   text-decoration: none;
   padding: 5px;
   border-radius: 5px;
-  color: rgb(16, 70, 133);
+  color:rgb(138, 96, 61);
   transition: background 0.5s ease;
 }
 
@@ -283,7 +283,7 @@ main section:last-child {
   flex: 15%;
   max-width: 15%;
   text-align: right; 
-  color: rgb(16, 70, 133);
+  color: rgb(138, 96, 61);
   font-weight: bold;
 }
 
@@ -312,7 +312,7 @@ main section:last-child {
 footer {
  color: white;
  padding: 1em;
- background-color: rgb(62, 79, 128);
+ background-color: rgb(138, 96, 61);
  
 }
 
